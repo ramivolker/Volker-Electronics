@@ -45,6 +45,7 @@ header {
     height: 100%;
     max-width: 100%;
     align-items: center;
+    outline: none;
 }
 
 h1{
@@ -85,8 +86,10 @@ header a {
     font-weight: 600;
     font-size: 4em;
     color: var(--naranja);
-    margin: 20px 40px;
+    margin: 20px 20px;
     text-align: center;
+    padding: 0 20px 20px;
+    border-bottom: 1px solid var(--naranja);
 }
 
 .ms-videop{
@@ -292,6 +295,8 @@ footer{
     align-items: flex-end;
 }
 
+/* Fin cards */
+
 .containerofertas{
     display: grid;
     width: 60%;
@@ -460,4 +465,128 @@ footer{
     font-size: 1em;
     text-align: center;
     font-family: Edu NSW ACT Foundation, sans-serif;
+}
+
+
+
+
+
+/* business.html */
+
+.bs-sect1{
+    width: 100%;
+    height: calc(100vh - 150px);
+    background-image: url(./fondovioleta4.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bs-sect1-container{
+    width: 20vw;
+    height: 60vh;
+    background-color: var(--gris);
+    display: flex;
+    flex-direction: column;
+    margin: 20% 0;
+}
+
+.bs-title{
+    font-family: Bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    font-size: 4em;
+    color: var(--violeta);
+    text-shadow: 0px 0px 2px var(--violeta);
+    border-bottom: 1px solid var(--violeta);
+    padding:1.5rem 30px;
+    height: max-content;
+    align-self: center;
+}
+
+.bs-p1{
+    font-family: Source Sans Pro, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    margin: 3vh 3vw 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.bs-formsect{
+    width: 40%;
+    max-height: 70%;
+    padding: 50px;
+    box-shadow: 0px 0px 10px rgb(128, 128, 128, 0.7);
+    margin: 5vh 0;
+    background-color: rgb(112, 112, 112);
+    color: azure;
+    font-family: Source Sans Pro, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.bs-form p{
+    padding: 20px;
+}
+
+.bs-form button,
+.bs-form input,
+.bs-form textarea{
+    padding: 0.7rem;
+    border: none;
+    background: none;
+    border-bottom: 1px solid var(--violeta);
+    outline: 0;
+    color: white;
+    width: 100%;
+}
+
+.bs-form button{
+    background-color: var(--violeta);
+    font-family: Roboto, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    pad: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: var(--trans);
+    outline: 0;
+}
+
+.bs-form button:hover, .bs-form button:focus{
+    background-color: #5c0091;
+    color: black;
+}
+
+.bs-form-block{
+    grid-column: 1/3;
+    max-height: 50%;
+}
+
+.bs-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bs-form-block textarea{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.bs-wp-contact-container{
+    width: 3rem;
+    height: 3rem;
+    background-color: greenyellow;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px greenyellow;
+    position: absolute;
+    left: 300px;
+    top: 780px;
+    cursor: pointer;
+}
+
+.bs-wplogo{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
 }

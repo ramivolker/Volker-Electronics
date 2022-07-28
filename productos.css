@@ -1,0 +1,140 @@
+:root{
+    --naranja: #ba3d00;
+    --gris: rgb(61, 61, 61);
+    --naranjaoscuro: #692300;
+    --naranjamuyoscuro: #2c160c;
+    --naranjaclaro: #ffb28b;
+    --trans: all 0.5s ease 0s;
+    --violeta: #8a00da;
+}
+
+
+.pr-sect2{
+    width: 100%;
+    height: 150vh;
+    background-image: url(./fondonaranja3.jpg);
+    background-size: contain;
+}
+
+.pr-ofertassect{
+    background-color: darkgray;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150vh 1fr;
+}
+
+.pr-ofertascontainergrid{
+    grid-column:  2/4;
+    grid-row: 1/3;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.ofertastext{
+    justify-self: center;
+    align-self: center;
+
+}
+
+.containerofertas{
+    margin: auto;
+}
+
+.pr-containerofertas{
+    display: grid;
+    width: 75%;
+    background-color: var(--naranja);
+    padding: 30px;
+    border-radius: 10px 10px 0px 0px;
+    margin: 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-self: center;
+    align-self: center;
+}
+
+.pr-containerfiltros{
+    grid-column: 1/2;
+    width: 55%;
+    background-color: lightgrey;
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.pr-filtrostitle{
+    text-decoration: none;
+    color: var(--naranja);
+    font-family: Bebas Neue , Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0rem 0 1rem;
+    padding: 0 12%;
+    border-bottom: 1px solid var(--naranja);
+}
+
+.pr-categoria{
+    font-family: Source Sans Pro, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(0, 0, 0);
+    margin: 3vh 2.5vw;
+    font-size: 1.3em;
+    text-align: left;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+.pr-categoria-hijo{
+    font-family: Source Sans Pro, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(0, 0, 0);
+    margin: 0 2.5vw 2vh;
+    font-size: 1.0em;
+    text-align: left;
+    font-weight: 500;
+    align-self:flex-start;
+    cursor: pointer;
+}
+
+.pr-form-precio-input{
+    padding: 0.2rem;
+    border: none;
+    background: none;
+    border-bottom: 1px solid var(--naranja);
+    outline: 0;
+    color: black;
+    width: 9rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: Roboto, Impact, sans-serif;
+}
+
+.pr-form-precio-p{
+    font-family: Source Sans Pro, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(0, 0, 0);
+    margin: 0 2.5vw;
+    font-size: 1.0em;
+    text-align: left;
+    font-weight: 500;
+    align-self:flex-start;
+    cursor: pointer;
+}
+
+.pr-containerproductos{
+    display: grid;
+    width: 75%;
+    background-color: lightgray;
+    padding: 30px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 0 20vh;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-self: center;
+    align-self: center;
+}
