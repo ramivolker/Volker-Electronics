@@ -583,10 +583,37 @@ footer{
     left: 300px;
     top: 780px;
     cursor: pointer;
+    transition: var(--trans);
+}
+
+.bs-wp-contact-container:hover{
+    box-shadow: 0px 0px 12px greenyellow;
 }
 
 .bs-wplogo{
     font-size: 2rem;
     text-decoration: none;
     color: black;
+}
+
+.bs-descarga{
+    background-color: azure;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 2px azure;
+    position: absolute;
+    cursor: pointer;
+    transition: var(--trans);
+    font-family: Roboto, Impact, sans-serif;
+    font-weight: 500;
+    left: 425px;
+    top: 800px;
+    color: black;
+}
+
+.bs-descarga:hover{
+    box-shadow: 0px 0px 8px azure;
 }
