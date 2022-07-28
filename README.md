@@ -1,6 +1,8 @@
 # Volker-Electronics
 Proyecto Final para el curso de programación de Revolución Digital.
 
+Primero explicar que dimos muy poco responsive y me centré en hacer la página para mi monitor que es de 24 pulgadas 1920x1080 relación aspecto 16:9.
+
 La página no está terminada, nos dieron una semana antes a las consignas y borré todo para volver a comenzar. 
 
 Faltan las páginas de Servicio Técnico, Redes Sociales, Soporte y una aparte que sería una plantilla para cada producto cuando clickeas su tarjeta.
