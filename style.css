@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Edu+NSW+ACT+Foundation&family=Montserrat:wght@400;700&family=Oswald:wght@200;500&family=Roboto:ital,wght@0,400;0,500;1,300&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+:root{
+    --naranja: #ba3d00;
+    --gris: rgb(61, 61, 61);
+    --naranjaoscuro: #692300;
+    --naranjamuyoscuro: #2c160c;
+    --naranjaclaro: #ffb28b;
+    --trans: all 0.5s ease 0s;
+    --violeta: #8a00da;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns:  repeat(12, 1fr);
+    background-color: var(--gris);
+    grid-template-rows: 50px 50px 50px;
+    box-shadow: 0px 1px 8px;
+    z-index: 2;
+    position: relative;
+}
+#headerlogo{
+    grid-column: 1/4;
+    grid-row: 1/4;
+    justify-items: center;
+    background-color: var(--naranja);
+    align-items: center;
+    align-items: center;
+    transition: all 0.5s ease 0s;
+}
+
+#headerlogo:hover{
+    background-color: var(--naranjaoscuro);
+}
+
+#headerlogoimg{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    max-width: 100%;
+    align-items: center;
+}
+
+h1{
+    visibility: hidden;
+    font-size: 1px;
+}
+
+li{
+    list-style: none;
+}
+header a {
+    text-decoration: none;
+    color: var(--naranja);
+    font-family: Bebas Neue , Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+#mainsection{
+    background-image: url(./mechtec.jpg);
+    background-size: cover;
+    height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ms-containervideo{
+    background-color: var(--gris);
+    height: 567px;
+    display: flex;
+    flex-flow: column;
+    max-width:min-content;
+}
+
+.ms-videotitle{
+    font-family: Bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    font-size: 4em;
+    color: var(--naranja);
+    margin: 20px 40px;
+    text-align: center;
+}
+
+.ms-videop{
+    font-family: Source Sans Pro, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    margin: 0px 15px;
+    font-size: 1.2em;
+}
+
+#navprod{
+    display: flex;
+    grid-column: 7/8;
+    grid-row: 3/4;
+    text-align: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-shadow: 2px 2px 10px;
+}
+
+#downsignalimg{
+    height: 80%;
+    transition: var(--trans);
+    padding-top: 3px;
+}
+#downsignalimg:hover{
+    opacity: 50%;
+}
+.downsignal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 0px 8px;
+    z-index: 2;
+    position: relative;   
+    width: 100%;
+    height: 50px;
+    background-color: var(--gris);
+}
+
+#logovich{
+    display: grid;
+    grid-column: 1/3;
+}
+
+.navbarli{
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 6vw;
+    height: 34px;
+}
+
+#nav_links{
+    display: flex;
+}
+
+nav{
+    grid-column: 5/13;
+    grid-row: 3/4;
+}
+
+.navtext1{
+    align-items: center;
+    color: var(--naranja);
+    transition: var(--trans);
+}
+
+.navtext1:hover{
+    color:var(--naranjaoscuro)
+}
+
+#login{
+    grid-column: 12/13;
+    padding-top: 10px;
+}
+
+#logggin {
+    color: var(--naranja);
+    transition: var(--trans);
+}
+
+#logggin:hover{
+    color:var(--naranjaoscuro);
+}
+
+#anchordownsignal{
+    cursor: pointer;
+}
+
+footer{
+    background-color: var(--gris);
+    color: gray;
+    font-family: Source Sans Pro, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#ofertassect{
+    background-image: url(./fondonaranja2.jpg);
+    background-size: contain;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+/* Tarjetas de productos*/
+
+.card{
+    max-width: 300px;
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    border-radius: 6px;
+    box-shadow: 0 0 0.2em gray;
+    background-color: var(--gris);
+    color: white;
+    cursor:pointer;
+    transition: var(--trans);
+}
+
+.card:hover{
+    box-shadow:0 0 1.5em gray;
+}
+
+.card img {
+    width: 100%;
+    height: 11.5vw;
+    object-fit:contain;
+    background-color: white;
+}
+
+.card-img{
+    min-height: 11.5vw;
+}
+
+.informacion{
+    display:flex;
+    flex-flow: column;
+    border-top: 1px solid;
+    padding: 1em;
+    font-family: Source Sans Pro, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100%;
+}
+
+.card-envio{
+    font-weight: 600;
+    background-color:mediumblue;
+    color: white;
+    border-radius: 4px;
+    max-width: max-content;
+    padding: 1px 3px;
+}
+
+.card-precio{
+    font-size: 1.5em;
+}
+
+.card-costo-envio{
+    color: greenyellow;
+    font-size: 0.9em;
+}
+
+.card-desc{
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.card-estrellas, .card-opiniones{
+    opacity: 0;
+    transition: var(--trans);
+}
+
+.card:hover .card-estrellas, .card:hover .card-opiniones{
+    opacity: 1;
+}
+
+.card-ciudad{
+    margin-left: auto;
+    margin-right: auto;
+    color: gray;
+    align-self: end;
+    justify-self: flex-end;
+}
+
+.card-estrellas{
+    color: mediumblue;
+}
+
+.card-containerhover > *{
+    margin: 0;
+}
+
+.card-containerhover{
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+}
+
+.containerofertas{
+    display: grid;
+    width: 60%;
+    background-color: var(--naranja);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 0px 0px 60px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.ofertastext{
+    font-size: 4.3em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    color: var(--naranja);
+    margin-top: 50px;
+    text-shadow: 0px 0px 7px var(--naranjamuyoscuro);
+    background-color: var(--gris);
+    padding: 15px 40px;
+    border-radius: 3px;
+    transition: var(--trans);
+}
+
+.ofertastext:hover{
+    text-shadow: 0px 0px 10px var(--naranja);
+}
+
+.card-precioviejo{
+    color: red;
+    text-decoration: line-through;
+    
+}
+
+.sect3{
+    width: 100%;
+    background-image: url(./fondonaranja3.jpg);
+    background-size: cover;
+}
+
+.sect3container{
+    display: flex;
+    flex-flow: column;
+    width: 60%;
+    margin: 5vw auto;
+    background-color: var(--gris);
+    border-radius: 15px;
+    transition: var(--trans);
+}
+
+.sect3container:hover{
+    box-shadow: 0px 0px 10px gray;
+}
+
+.sect3title {
+    font-family: Bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    font-size: 4em;
+    color: var(--naranja);
+    align-self: center;
+    margin: 20px;
+}
+
+.sect3p, .ul-pqelegirnos-li{
+    font-family: Source Sans Pro, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    margin: 0px 3vw;
+    font-size: 1.2em;
+}
+
+.ul-pqelegirnos{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    list-style: circle;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.ul-pqelegirnos-li{
+    margin:auto 0.7vw 3vw;
+    text-align: center;
+}
+
+.sect3p{
+    text-indent: 30px;
+}
+
+.sect4{
+    width: 100%;
+    background-image: url(./fondovioleta4.jpg);
+    background-size: cover;
+    background-position: 0px -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.s4-container{
+    background-color: var(--gris);
+    border-radius: 10px;
+    border: 5px var(--naranja);
+    opacity: 1;
+    display: flex;
+    margin-bottom: 5vh;
+
+}
+
+.s4-container-title {
+    margin: 0;
+    margin-top: 5vh;
+    background-color: var(--gris);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.s4-title{
+    font-family: Bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    font-size: 4em;
+    color: var(--violeta);
+    align-self: center;
+    margin: 2vh 10vw 0vh;
+    text-shadow: 0px 0px 3px var(--violeta);
+}
+
+.s4-foto{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.s4-container-foto{
+    width: 240px;
+    
+    margin: 20px;
+    background-color: rgba(172, 172, 172, 0.2);
+    display: flex;
+    flex-flow: column;
+}
+
+.s4-presentacion-nombre{
+    color: rgba(255, 255, 255, 0.685);
+    margin: 10px 3vw;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: 'abel', sans-serif;
+    font-weight: 300;
+}
+
+.s4-presentacion-cargo{
+    color: rgb(255, 255, 255);
+    margin: 10px 3vw;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.s4-presentacion-frase{
+    color: rgba(255, 255, 255, 0.486);
+    margin: 10px 3vw;
+    font-size: 1em;
+    text-align: center;
+    font-family: Edu NSW ACT Foundation, sans-serif;
+}
